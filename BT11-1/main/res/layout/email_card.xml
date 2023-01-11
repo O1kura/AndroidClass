@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/email_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_background"
+            android:gravity="center"
+            android:text="T"
+            android:textColor="#F6F4F4"
+            android:textSize="35sp" />
+        <TextView
+            android:id="@+id/sender"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/avatar"
+            android:layout_toStartOf="@id/date"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/sample_sender" />
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sender"
+            android:layout_alignStart="@+id/sender"
+            android:layout_toStartOf="@id/star"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/sample_title"/>
+        <TextView
+            android:id="@+id/brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject"
+            android:layout_alignStart="@+id/subject"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_toStartOf="@id/star"
+            android:text="@string/sample_brief"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:text="@string/sample_date"/>
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/subject"
+            android:src="@drawable/ic_baseline_star_border_24" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
